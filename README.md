@@ -64,13 +64,13 @@ Pirms programmatūru iespējams izmantot, nepieciešams: uzinstalēta bibliotēk
 
 1. Instalēšana: 
 
-pip install selenium <br/>
-pip install bs4 <br/>
+<ins>pip install selenium</ins> <br/>
+<ins>pip install bs4</ins> <br/>
 Palaid programmu.  <br/>
 
 2. Rezultāts:
    
-** ĻOTI ILGI JĀGAIDA **, kad webdraiveris tiks galā ar pārlūkprogrammas lapu. <br/>
+**ĻOTI ILGI JĀGAIDA**, kad webdraiveris tiks galā ar pārlūkprogrammas lapu. <br/>
 Tiek izvadīts izvēles tēmas no kurām var izvēlēties.  <br/>
 Konsolē tiek parādīta atbilstošā tēma. <br/>
 Tiek izgūts lapas saturs. <br/>
