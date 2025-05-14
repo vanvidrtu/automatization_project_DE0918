@@ -42,10 +42,18 @@ Node objekts satur atribūtus
 <br/>
 
 Koda fragments: 
-
-"   " 
 <br/>
-
+```
+ class Node():
+    def _init_(self, value, key): 
+        self.left = None
+        self.right = None
+        self.key = key
+        self.value = value
+        self.link = "irrr"
+```
+<br/>
+<br/>
 BST ir binārais meklēšanas koks ar šādām metodēm: 
 * __init__() – Inicializē jaunu tukšu koku 
 * insert_node(value, key) – Pievieno jaunu Node objektu kokam 
@@ -53,25 +61,35 @@ BST ir binārais meklēšanas koks ar šādām metodēm:
 * contains(value) – Meklē, vai ievadītā vērtība atrodas kokā, un atgriež tās saiti
 <br/> 
 Koda fragments: 
+<br/>
 
-"   " 
-
+```
+ class BST():
+    def _init_(self):
+        self.root = None
+    def insert_node(self, value, key):
+        ...
+    def create_tree(self, list):
+        ...
+    def contains(self, value):
+```
+<br/>
 
 ## Programmatūras izmantošana 
 <br/>
 
 Pirms programmatūru iespējams izmantot, nepieciešams: uzinstalēta bibliotēka selenium, bs4. <br/>
 
-1. Instalēšana: 
+1) **Instalēšana:**
+```
+pip install selenium 
+pip install bs4 
+```
+2) **Palaid programmu.**  <br/>
+* **ĻOTI ILGI JĀGAIDA**, kad webdraiveris tiks galā ar pārlūkprogrammas lapu. <br/>
+*  Tiek izvadīts izvēles tēmas no kurām var izvēlēties.  <br/>
 
-<ins>pip install selenium</ins> <br/>
-<ins>pip install bs4</ins> <br/>
-Palaid programmu.  <br/>
-
-2. Rezultāts:
-   
-**ĻOTI ILGI JĀGAIDA**, kad webdraiveris tiks galā ar pārlūkprogrammas lapu. <br/>
-Tiek izvadīts izvēles tēmas no kurām var izvēlēties.  <br/>
-Konsolē tiek parādīta atbilstošā tēma. <br/>
-Tiek izgūts lapas saturs. <br/>
-Saturs tiek saglabāts teksta failā " python_cheat_sheet .txt". <br/>
+3) **Rezultāts:** <br/>
+* Konsolē tiek parādīta atbilstošā tēma. <br/>
+* Tiek izgūts lapas saturs. <br/>
+* Saturs tiek saglabāts teksta failā " python_cheat_sheet .txt". <br/>
